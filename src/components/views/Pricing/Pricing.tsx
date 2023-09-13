@@ -12,9 +12,12 @@ const Pricing = () => {
       </h1>
 
       <div className="grid grid-cols-2 xl:gap-11 lg:gap-4 ">
-        {pricedata.map((item) => {
+        {pricedata.map((item, index) => {
           return (
-            <div className=" box-shadow lg:py-4 xl:py-11 xl:px-12 lg:px-4">
+            <div
+              key={index}
+              className=" box-shadow lg:py-4 xl:py-11 xl:px-12 lg:px-4"
+            >
               <div className=" border-b border-lightGray pb-5">
                 <h4 className="text-[1.8rem] font-medium">{item.title}</h4>
                 <p className="text-primary mt-1 mb-5">{item.sub}</p>

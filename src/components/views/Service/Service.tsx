@@ -59,9 +59,12 @@ const Service = () => {
       </div>
 
       <div className="grid lg:grid-cols-1 xl:grid-cols-2 ">
-        {servicedata.map((item) => {
+        {servicedata.map((item, index) => {
           return (
-            <div className="box-shadow w-max lg:py-6 2xl:py-8 px-8 2xl:px-14 mb-7 ">
+            <div
+              key={index}
+              className="box-shadow w-max lg:py-6 2xl:py-8 px-8 2xl:px-14 mb-7 "
+            >
               <img className="mb-6" src={item.icon} alt="" />
               <h3 className="mb-4">{item.title}</h3>
               <p className="text-lg text-primary w-[20rem]">{item.des}</p>

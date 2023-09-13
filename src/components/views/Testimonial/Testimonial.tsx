@@ -115,7 +115,7 @@ const Testimonial = () => {
             <h6 className="text-lg text-primary">Via Upwork. May 31 - 2023</h6>
             <p className="text-lg text-primary mt-8">
               Tan did an amazing job I am now welcoming her to my team <br />
-              as the head of Creative Design."
+              as the head of Creative Design.
             </p>
           </div>
         </div>

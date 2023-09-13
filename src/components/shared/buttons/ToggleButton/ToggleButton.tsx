@@ -1,15 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import clsx from 'clsx';
-import { motion } from 'framer-motion';
-import { useTheme } from 'next-themes';
-import * as BsIcons from 'react-icons/bs';
+import clsx from "clsx";
+import { motion } from "framer-motion";
 
-import ToggleButtonTooltip from './ToggleButtonTooltip';
-import type { Colors, Sizes } from './button-type';
+import { useTheme } from "next-themes";
+import * as BsIcons from "react-icons/bs";
+
+import ToggleButtonTooltip from "./ToggleButtonTooltip";
+import type { Colors, Sizes } from "./button-type";
 
 const spring = {
-  type: 'spring',
+  type: "spring",
   stiffness: 700,
   damping: 30,
   duration: 2,
@@ -25,19 +26,19 @@ const ToggleButton: React.FC<{
   lightIcon?: React.ReactNode;
   tooltip?: boolean;
 }> = ({
-  light = 'amber',
-  dark = 'indigo',
-  size = 'md',
+  light = "amber",
+  dark = "indigo",
+  size = "md",
   lightIcon = <BsIcons.BsSun />,
   darkIcon = <BsIcons.BsMoonStars />,
   tooltip = false,
 }) => {
   const { theme, setTheme } = useTheme();
   const handleToggle = () => {
-    if (theme == 'light') {
-      setTheme('dark');
-    } else if (theme == 'dark') {
-      setTheme('light');
+    if (theme == "light") {
+      setTheme("dark");
+    } else if (theme == "dark") {
+      setTheme("light");
     }
   };
 
@@ -62,14 +63,14 @@ const ToggleButton: React.FC<{
       onClick={handleToggle}
       className={clsx(
         `group  rounded-full  relative  flex border-[1px] shadow-md`,
-        size === 'sm'
-          ? 'p-[2px] w-12'
-          : size === 'md'
-          ? 'p-1 w-[60px]'
-          : size === 'lg'
-          ? 'p-1 w-20'
-          : '',
-        theme === 'light'
+        size === "sm"
+          ? "p-[2px] w-12"
+          : size === "md"
+          ? "p-1 w-[60px]"
+          : size === "lg"
+          ? "p-1 w-20"
+          : "",
+        theme === "light"
           ? `justify-start bg-${light}-200 border-${light}-400`
           : `justify-end bg-${dark}-200 border-${dark}-400`
       )}
@@ -85,21 +86,21 @@ const ToggleButton: React.FC<{
         layout
         transition={spring}
         className={clsx(
-          'flex items-center justify-center rounded-full shadow-2xl',
+          "flex items-center justify-center rounded-full shadow-2xl",
 
-          size === 'sm'
-            ? 'h-5 w-5 p-1'
-            : size === 'md'
-            ? 'h-6 w-6 p-1'
-            : size === 'lg'
-            ? 'h-8 w-8 p-[6px]'
-            : '',
-          theme === 'light'
+          size === "sm"
+            ? "h-5 w-5 p-1"
+            : size === "md"
+            ? "h-6 w-6 p-1"
+            : size === "lg"
+            ? "h-8 w-8 p-[6px]"
+            : "",
+          theme === "light"
             ? `bg-${light}-600 bg-opacity-50 text-${light}-900 `
             : `bg-${dark}-600 bg-opacity-50 text-${dark}-900 `
         )}
       >
-        {theme == 'light' ? lightIcon : darkIcon}
+        {theme == "light" ? lightIcon : darkIcon}
       </motion.div>
     </motion.button>
   );

@@ -29,7 +29,7 @@ const Contact = () => {
 
       <div className="py-12">
         <h1>
-          Let's Work <span className="text-secondary">Together!</span>
+          Lets Work <span className="text-secondary">Together!</span>
         </h1>
         <p className="text-primary mt-2.5">
           My Email: tanjina.hemi12@gmail.com

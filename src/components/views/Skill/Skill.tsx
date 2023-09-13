@@ -52,9 +52,9 @@ const Skill = () => {
       </h1>
 
       <div className="grid lg:grid-cols-3 xl:grid-cols-4  ">
-        {skilldata.map((item) => {
+        {skilldata.map((item, index) => {
           return (
-            <div className="w-max ">
+            <div key={index} className="w-max ">
               <div className="box-shadow py-6 px-7 lg:mt-6 xl:mt-0">
                 <img src={item.icon} alt="" />
               </div>

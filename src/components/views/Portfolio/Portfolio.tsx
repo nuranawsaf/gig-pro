@@ -50,13 +50,16 @@ const Portfolio = () => {
       <div className="text-primary -mt-8">
         <p className="text-xl 2xl:text-2xl font-normal">
           Everybody wants to create something different and amazing, I wants
-          that as well. But it doesn't matter what i want,all that matters
+          that as well. But it does not matter what i want,all that matters
           whether you are happy with my work or not.
         </p>
         <div className="mt-8 grid lg:grid-cols-1 xl:grid-cols-2 gap-6">
-          {portfoliodata.map((item) => {
+          {portfoliodata.map((item, index) => {
             return (
-              <div className="w-max lg:p-2.5 2xl:p-4 bg-shadow  relative group">
+              <div
+                key={index}
+                className="w-max lg:p-2.5 2xl:p-4 bg-shadow  relative group"
+              >
                 <Link href={item.href}>
                   <img src={item.pic} alt="" />
                   <div className="port-hover">

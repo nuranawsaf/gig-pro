@@ -65,9 +65,9 @@ const Resume = () => {
         </div>
 
         <div className="">
-          {resumedate.map((item) => {
+          {resumedate.map((item, index) => {
             return (
-              <div className="mb-[3.8rem] ">
+              <div key={index} className="mb-[3.8rem] ">
                 <h4 className="text-primary">{item.date}</h4>
                 <h3>{item.title}</h3>
                 <h5 className="text-primary">{item.place}</h5>

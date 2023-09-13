@@ -25,9 +25,12 @@ const Sidebar = () => {
           </div>
 
           <div className="grid grid-cols-4  gap-y-5 mt-9">
-            {profileiconsdata.map((item) => {
+            {profileiconsdata.map((item, index) => {
               return (
-                <div className="icon-shadow  w-max 2xl:p-4 p-3 flex items-center justify-center">
+                <div
+                  key={index}
+                  className="icon-shadow  w-max 2xl:p-4 p-3 flex items-center justify-center"
+                >
                   <img className="lg:w-5 2xl:w-max" src={item.icon} alt="" />
                 </div>
               );
