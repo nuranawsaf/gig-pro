@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Link from "next/link";
 
 import { navLinks } from "../nav-links";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import clsx from "clsx";
 
 const DesktopNavbar: React.FC = () => {
-  const router = useRouter();
+  const [active, setActive] = useState(0);
 
   return (
     <nav className="hidden lg:block absolute top-1/2 -translate-y-1/2  right-10  z-50 ">
@@ -42,12 +43,13 @@ const DesktopNavbar: React.FC = () => {
       <div className="">
         <div className="flex items-center justify-between  gap-40 ">
           <ul className="list-none space-y-6  2xl:space-y-12  bg-shadow rounded-xl px-4 py-6">
-            {navLinks.map((item) => (
-              <li className="list-none" key={item.id}>
-                <Link href={item.href}>
+            {navLinks.map((item, index) => (
+              <li className={clsx()} key={item.id}>
+                <Link key={index} href={item.href}>
                   <span className="cursor-pointer lg:text-lg xl:text-[22px] text-white font-regular ">
                     <img
-                      className="text-lightGray 2xl:w-max w-5"
+                      className={`${active === index ? "" : ""}`}
+                      onClick={() => setActive(index)}
                       src={item.title}
                       alt=""
                     />

@@ -1,6 +1,7 @@
 import React from "react";
 import { VscMail } from "react-icons/vsc";
 import { profileiconsdata } from "./sidebardata";
+import Link from "next/link";
 
 const Sidebar = () => {
   return (
@@ -31,7 +32,9 @@ const Sidebar = () => {
                   key={index}
                   className="icon-shadow  w-max 2xl:p-4 p-3 flex items-center justify-center"
                 >
-                  <img className="lg:w-5 2xl:w-max" src={item.icon} alt="" />
+                  <Link href={item.href} target="_blank">
+                    <img className="lg:w-5 2xl:w-max" src={item.icon} alt="" />
+                  </Link>
                 </div>
               );
             })}
