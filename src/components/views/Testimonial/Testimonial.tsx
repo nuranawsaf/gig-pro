@@ -3,7 +3,7 @@ import { MdNavigateNext } from "react-icons/md";
 
 const Testimonial = () => {
   return (
-    <div className="my-28">
+    <div id="testimonial" className="my-28">
       <div className="flex btn-shadow items-center gap-3 border border-darkGray text-[#7F8493] w-max px-6 py-2 rounded-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"

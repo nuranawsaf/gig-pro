@@ -3,7 +3,7 @@ import { AiOutlineUser } from "react-icons/ai";
 
 const About = () => {
   return (
-    <div className="mt-28">
+    <div id="about" className="mt-28">
       <div className="flex btn-shadow items-center gap-3 border border-darkGray text-[#7F8493] w-max px-6 py-2 rounded-full">
         <AiOutlineUser />
         <p className="uppercase text-sm font-semibold">About</p>
