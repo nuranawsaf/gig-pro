@@ -1,0 +1,113 @@
+@import url(./fonts.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-size: 1rem;
+    color: white;
+    background-color: #24272c;
+  }
+
+  h1 {
+    @apply text-[3.80rem] leading-[4.8rem] font-raleway font-semibold;
+  }
+  h2 {
+    @apply font-raleway;
+  }
+  h3 {
+    @apply text-[1.9rem] font-raleway;
+  }
+  h4 {
+    @apply text-[1.5rem] font-raleway;
+  }
+  h5 {
+    @apply text-[1.25rem] font-raleway;
+  }
+
+  h6 {
+    @apply font-raleway;
+  }
+  p {
+    @apply text-base lg:text-xl font-raleway;
+  }
+
+  .sb {
+    @apply border border-red-500;
+  }
+
+  .bg-shadow {
+    border-radius: 24px;
+    background: #24272c;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25),
+      -2px -2px 4px 0px rgba(107, 107, 107, 0.25);
+  }
+  .btn-shadow {
+    border-radius: 40px;
+    border: 1px solid #5c5c5e;
+    background: #24272c;
+    box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.25) inset,
+      -8px -8px 16px 0px rgba(93, 93, 93, 0.25) inset;
+  }
+
+  .resume-shadow {
+    border-radius: 24px;
+    background: #24272c;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25) inset,
+      -10px -10px 20px 0px rgba(120, 120, 120, 0.25) inset;
+  }
+
+  .box-shadow {
+    border-radius: 24px;
+    background: #24272c;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset,
+      -2px -2px 4px 0px rgba(86, 86, 86, 0.25) inset;
+  }
+
+  .icon-shadow {
+    border-radius: 40px;
+    background: #24272c;
+    box-shadow: 6px 6px 12px 0px rgba(0, 0, 0, 0.25) inset,
+      -6px -6px 12px 0px rgba(101, 101, 101, 0.25) inset;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: calc(100% - 40px);
+    max-width: 1400px;
+  }
+
+  @media (min-width: 960px) {
+    .container {
+      width: calc(100% - 90px);
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .container {
+      width: calc(100% - 180px);
+    }
+  }
+
+  .hero-banner {
+    background-image: url("/assets/images/hero-banner.png");
+  }
+
+  @media (min-width: 960px) {
+    .hero-banner {
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .children-box {
+    overflow-y: scroll;
+    overflow: -moz-hidden-unscrollable;
+  }
+
+  .children-box::-webkit-scrollbar {
+    width: 0;
+  }
+}

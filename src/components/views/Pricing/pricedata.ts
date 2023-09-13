@@ -1,0 +1,28 @@
+export const pricedata = [
+  {
+    title: "Basic",
+    sub: "Based on your choice/idea",
+    price: "$40 /",
+    des: "Design with Figma, Adobe XD",
+    des2: "Remote/Online",
+    des3: "Work in business days, no weekend.",
+    des4: "Source file",
+    des5: "Design to understand the flow",
+    des6: "Assets for your developers",
+    btn: "Pick This package",
+  },
+  {
+    title: "Premium",
+    sub: "Customize Your Single Page",
+    price: "$80 /",
+    des: "wireframe",
+    des2: "Prototype",
+    des3: "Design with Figma, Adobe XD",
+    des4: "Remote/Online",
+    des5: "Work in business days, no weekend.",
+    des6: "Source file",
+    des7: "Design to understand the flow",
+    des8: "Assets for your developers",
+    btn: "Pick This package",
+  },
+];
