@@ -10,7 +10,7 @@ import Testimonial from "@/components/views/Testimonial/Testimonial";
 
 export default function Home() {
   return (
-    <div className="lg:pr-16  sb">
+    <div className="lg:pr-16 2xl:pr-10  lg:pl-1">
       <Hero />
       <About />
       <Resume />

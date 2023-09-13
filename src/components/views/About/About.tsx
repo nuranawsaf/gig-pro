@@ -17,7 +17,7 @@ const About = () => {
       </div>
 
       <div className="text-primary -mt-8">
-        <p className="text-2xl font-normal">
+        <p className="text-xl 2xl:text-2xl font-normal">
           Since beginning my journey as a freelance designer nearly 10 years
           ago, I've done remote work for agencies, consulted for startups, and
           collaborated with talented people to create digital products for both

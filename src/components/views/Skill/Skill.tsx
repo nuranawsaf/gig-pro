@@ -51,11 +51,11 @@ const Skill = () => {
         My <span className="text-secondary">Advantages</span>
       </h1>
 
-      <div className="grid grid-cols-4  ">
+      <div className="grid lg:grid-cols-3 xl:grid-cols-4  ">
         {skilldata.map((item) => {
           return (
-            <div className="w-max">
-              <div className="box-shadow py-6 px-7">
+            <div className="w-max ">
+              <div className="box-shadow py-6 px-7 lg:mt-6 xl:mt-0">
                 <img src={item.icon} alt="" />
               </div>
               <h5 className="mt-7 text-center">{item.name}</h5>

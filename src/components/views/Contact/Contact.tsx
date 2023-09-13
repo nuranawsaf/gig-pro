@@ -35,6 +35,97 @@ const Contact = () => {
           My Email: tanjina.hemi12@gmail.com
         </p>
       </div>
+
+      <div>
+        <form action="#" className="flex flex-col ">
+          <div className="grid grid-cols-2 gap-6">
+            <div>
+              <label className="text-primary inline-block  uppercase">
+                Full Name<span className="text-red-600">*</span>
+              </label>
+              <input
+                type="text"
+                name="fName"
+                id="fName"
+                placeholder="Your Full Name"
+                className="w-full border-none placeholder:text-darkGray bg-[#24272c] rounded-md  py-2 focus:outline-none  text-lightGray"
+              />
+            </div>
+
+            <div>
+              <label className="text-primary inline-block ">
+                PHONE<span className="text-red-600">*</span>
+              </label>
+              <input
+                type="number"
+                name="fnumber"
+                id="fnumber"
+                placeholder="Your Phone Number"
+                className="w-full border-none placeholder:text-darkGray bg-[#24272c] rounded-md  py-2 focus:outline-none  text-lightGray"
+              />
+            </div>
+
+            <div>
+              <label className="text-primary inline-block ">
+                {" "}
+                EMAIL<span className="text-red-600">*</span>
+              </label>
+              <input
+                type="email"
+                name="fEmail"
+                id="fEmail"
+                placeholder="Your Email Adress"
+                className="w-full border-none placeholder:text-darkGray bg-[#24272c] rounded-md  py-2 focus:outline-none  text-lightGray"
+              />
+            </div>
+
+            <div>
+              <label className="text-primary inline-block ">
+                YOUR SUBJECT<span className="text-red-600">*</span>
+              </label>
+              <input
+                type="text"
+                name="fsub"
+                id="fsub"
+                placeholder="Your Subject to Talk"
+                className="w-full border-none placeholder:text-darkGray bg-[#24272c] rounded-md  py-2 focus:outline-none  text-lightGray"
+              />
+            </div>
+
+            <div>
+              <label className="text-primary inline-block ">
+                BUDGET (OPTIONAL)<span className="text-red-600">*</span>
+              </label>
+              <input
+                type="text"
+                name="fbudget"
+                id="fbudget"
+                placeholder="Budget For Your Project"
+                className="w-full border-none placeholder:text-darkGray bg-[#24272c] rounded-md  py-2 focus:outline-none  text-lightGray"
+              />
+            </div>
+          </div>
+
+          <div className=" mt-6 border-b border-primary pb-16">
+            <label className="text-primary inline-block ">
+              MESSAGE<span className="text-red-600">*</span>
+            </label>
+            <input
+              type="text"
+              name="fsub"
+              id="fsub"
+              placeholder="Write Your Message Here"
+              className="w-full border-none placeholder:text-darkGray bg-[#24272c] rounded-md  py-2 focus:outline-none  text-lightGray"
+            />
+          </div>
+
+          <div>
+            <button className="mt-12 bg-secondary w-max py-5 px-24  font-bold text-black rounded-full">
+              SEND MESSAGE
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

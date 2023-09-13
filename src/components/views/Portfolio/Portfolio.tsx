@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import { portfoliodata } from "./portfoliodata";
 
 const Portfolio = () => {
   return (
@@ -46,12 +48,25 @@ const Portfolio = () => {
       </div>
 
       <div className="text-primary -mt-8">
-        <p className="text-2xl font-normal">
+        <p className="text-xl 2xl:text-2xl font-normal">
           Everybody wants to create something different and amazing, I wants
           that as well. But it doesn't matter what i want,all that matters
           whether you are happy with my work or not.
-          <img className="mt-9" src="/assets/images/skill.svg" alt="" />
         </p>
+        <div className="mt-8 grid lg:grid-cols-1 xl:grid-cols-2 gap-6">
+          {portfoliodata.map((item) => {
+            return (
+              <div className="w-max lg:p-2.5 2xl:p-4 bg-shadow  relative group">
+                <Link href={item.href}>
+                  <img src={item.pic} alt="" />
+                  <div className="port-hover">
+                    <h3 className="mt-32 text-center text-white">Click Here</h3>
+                  </div>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

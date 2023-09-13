@@ -11,7 +11,9 @@ const Hero = () => {
       </div>
 
       <div className="py-12 ">
-        <h6 className="text-xl text-primary mb-6 mt-6">WELCOME TO MY WORLD</h6>
+        <h6 className="text-base 2xl:text-xl text-primary mb-6 mt-6">
+          WELCOME TO MY WORLD
+        </h6>
         <h1>
           Hi This is <span className="text-secondary">Hemi</span>
         </h1>
@@ -19,7 +21,7 @@ const Hero = () => {
       </div>
 
       <div className="text-primary -mt-8">
-        <p className="text-2xl font-normal">
+        <p className="text-xl 2xl:text-2xl font-normal">
           I design and code beautifully simple things and i love to play
           <br />
           with white space. Just simple like that!

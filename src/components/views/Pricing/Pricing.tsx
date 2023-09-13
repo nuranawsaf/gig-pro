@@ -11,10 +11,10 @@ const Pricing = () => {
         My <span className=" text-secondary">Pricing</span>
       </h1>
 
-      <div className="grid grid-cols-2 gap-11">
+      <div className="grid grid-cols-2 xl:gap-11 lg:gap-4 ">
         {pricedata.map((item) => {
           return (
-            <div className=" box-shadow  py-11 px-12 ">
+            <div className=" box-shadow lg:py-4 xl:py-11 xl:px-12 lg:px-4">
               <div className=" border-b border-lightGray pb-5">
                 <h4 className="text-[1.8rem] font-medium">{item.title}</h4>
                 <p className="text-primary mt-1 mb-5">{item.sub}</p>
@@ -36,7 +36,7 @@ const Pricing = () => {
               </div>
 
               <div className="mt-11">
-                <button className="text-black text-lg font-medium bg-secondary w-full rounded-full py-4">
+                <button className="text-black text-lg font-medium bg-secondary w-full rounded-full py-2.5 xl:py-4">
                   {item.btn}
                 </button>
               </div>

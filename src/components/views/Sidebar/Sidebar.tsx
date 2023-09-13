@@ -1,22 +1,21 @@
 import React from "react";
-import { FaTwitter, FaDribbble, FaInstagram, FaGithub } from "react-icons/fa";
 import { VscMail } from "react-icons/vsc";
 import { profileiconsdata } from "./sidebardata";
 
 const Sidebar = () => {
   return (
-    <div className="h-full flex items-center justify-end">
-      <div className="bg-shadow py-6 px-5 ">
-        <div className="py-9 px-8 border border-darkGray rounded-3xl sb  ">
-          <div className=" h-[253px] w-full">
+    <div className="h-full flex items-center justify-end w-full">
+      <div className="bg-shadow 2xl:py-6 py-3 2xl:px-5 px-2.5">
+        <div className="2xl:py-9 py-5 2xl:px-8 px-4 border border-darkGray rounded-3xl sb  ">
+          <div className="lg:h-40 2xl:h-[253px] w-full">
             <img
-              className="rounded-[2.5rem] h-full w-full object-cover"
+              className="rounded-3xl 2xl:rounded-[2.5rem] h-full w-full object-cover"
               src="/assets/images/profile.jpg"
               alt=""
             />
           </div>
 
-          <div className="text-center font-medium mt-8">
+          <div className="text-center font-medium lg:mt-3 2xl:mt-8">
             <h4 className="font-medium">Tanjina Nusrat Hemi</h4>
             <h5 className="text-primary">
               UX/UI Designer
@@ -25,20 +24,18 @@ const Sidebar = () => {
             </h5>
           </div>
 
-          <div></div>
-
           <div className="grid grid-cols-4  gap-y-5 mt-9">
             {profileiconsdata.map((item) => {
               return (
-                <div className="icon-shadow  w-max p-4 flex items-center justify-center">
-                  <img src={item.icon} alt="" />
+                <div className="icon-shadow  w-max 2xl:p-4 p-3 flex items-center justify-center">
+                  <img className="lg:w-5 2xl:w-max" src={item.icon} alt="" />
                 </div>
               );
             })}
           </div>
 
-          <div className="my-8 flex justify-center">
-            <button className="text-center flex justify-center rounded-full items-center uppercase font-medium gap-2 bg-secondary py-4 w-full text-black">
+          <div className="lg:mt-6 2xl:mt-12 flex justify-center ">
+            <button className="text-center flex justify-center rounded-full items-center uppercase font-medium gap-2 bg-secondary py-2.5 2xl:py-4 w-full text-black">
               <VscMail className="text-lg" />
               Hire Me!
             </button>

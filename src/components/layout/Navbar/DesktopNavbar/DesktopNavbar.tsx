@@ -41,12 +41,16 @@ const DesktopNavbar: React.FC = () => {
       </div>
       <div className="">
         <div className="flex items-center justify-between  gap-40 ">
-          <ul className="list-none  space-y-12  bg-shadow rounded-xl px-4 py-6">
+          <ul className="list-none space-y-6  2xl:space-y-12  bg-shadow rounded-xl px-4 py-6">
             {navLinks.map((item) => (
               <li className="list-none" key={item.id}>
                 <Link href={item.href}>
                   <span className="cursor-pointer lg:text-lg xl:text-[22px] text-white font-regular ">
-                    <img className="text-lightGray" src={item.title} alt="" />
+                    <img
+                      className="text-lightGray 2xl:w-max w-5"
+                      src={item.title}
+                      alt=""
+                    />
                   </span>
                 </Link>
               </li>
