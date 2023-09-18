@@ -11,7 +11,7 @@ const Sidebar = () => {
           <div className="lg:h-40 2xl:h-[253px] w-full">
             <img
               className="rounded-3xl 2xl:rounded-[2.5rem] h-full w-full object-cover"
-              src="/assets/images/profile.JPEG"
+              src="/assets/images/profile.jpeg"
               alt=""
             />
           </div>
