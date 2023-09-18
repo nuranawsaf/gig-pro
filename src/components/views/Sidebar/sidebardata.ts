@@ -13,11 +13,11 @@ export const profileiconsdata = [
   },
   {
     icon: "/assets/images/fiverr.svg",
-    href: "",
+    href: "https://www.fiverr.com/hemi024?source=gig_page",
   },
   {
     icon: "/assets/images/envato.png",
-    href: "",
+    href: "https://graphicriver.net/user/designcanvas/portfolio",
   },
   {
     icon: "/assets/images/linkedin.svg",
